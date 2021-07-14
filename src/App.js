@@ -35,6 +35,7 @@ function App() {
 
   return (
     <div className="App">
+    <h1>Welcome to my Pokemon App</h1>
       {loading && <div className="loading">Loading...</div>}
       { !loading && <PokemonList pokemon={pokemon} />}
       <Paging
