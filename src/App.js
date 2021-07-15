@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import Paging from "./Paging";
 import PokemonList from "./PokemonList";
 import axios from "axios";
-import { div } from "prelude-ls";
 
 function App() {
   const [pokemon, setPokemon] = useState([])
