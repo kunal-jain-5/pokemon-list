@@ -15,8 +15,7 @@ function App() {
   useEffect(() => {
     setLoading(true);
     let cancel;
-    axios
-      .get(currentPageUrl, {
+    axios.get(currentPageUrl, {
         cancelToken: new axios.CancelToken((c) => (cancel = c)),
       })
       .then((response) => {
